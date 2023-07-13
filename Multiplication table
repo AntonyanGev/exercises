@@ -1,0 +1,9 @@
+let user= +prompt('fill');
+for(let i=1; user<=10;i++) {
+    console.log(`${user} * ${i} = ${i* user}`)
+    if(i>10) {
+        break;
+    } 
+}
+
+//Բազմապատկման աղյուսակ
