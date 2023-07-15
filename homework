@@ -100,6 +100,17 @@ function fo(obj) {
        return res
 }
 
+/// second solution with for in
+function fo(obj) {
+  let res = {};
+
+  for (let key1 in obj) {
+    let value = obj[key1];
+    res[value] = key1;
+  }
+
+  return res;
+}
 5///Given two objects. Write a function that performs shallow compare.
 
 function shallowComp(obj1, obj2) {
