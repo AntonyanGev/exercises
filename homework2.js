@@ -11,6 +11,19 @@ function palindrome(str) {
         }
     }
 }
+////the second solution of this exercise
+function palindrome(str) {
+    for(let i=0; i<str.length;i++) {
+        if(str[i]!== str[str.length-1-i]) {
+            console.log('no')
+           break
+        } else {
+            console.log('yes')
+           break;
+      }
+   }
+}
+
 
 ///2--couldn't write
 
