@@ -1,16 +1,19 @@
 ///1
 function palindrome(str) {  
-    const len = str.length;   
+    const len = str.length; 
+    let isPalindrome=true
     for (let i = 0; i < len / 2; i++) {   
         if (str[i] !== str[len - 1 - i]) {  
-          console.log( 'It is not palindrome'); 
+           isPalindrome= false 
             break;
           } else {
-            console.log('palindrom')
-            break;
+           isPalindrome=true
+        
         }
     }
+    return isPalindrome
 }
+
 ////the second solution of this exercise
 function palindrome(str) {
     for(let i=0; i<str.length;i++) {
