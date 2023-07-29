@@ -29,7 +29,10 @@ function Shop(name, menu) {
 
   this.addorder = function (item) {
     this.orders.push(item);
-  };
+  }
+    this.removeOrder= function(remove){
+        this.orders.splice(remove,1)
+    }
 }
 
 const addmenu = [
@@ -38,11 +41,17 @@ const addmenu = [
   { name: 'Cappuccino', type: 'drink', price: 500 }
 ];
 
-const elem = { name: 'Latte', type: 'coffee', price: 800 };
+const elem = {
+    name: 'Latte', type: 'coffee', price: 800 
+};
 
 const coffee = new Shop('My Coffee Shop', addmenu);
 
-let item = { name: 'chocolate', type: 'drink', price: 200 };
-
+let item = { 
+    name: 'chocolate', type: 'drink', price: 200,
+    name:'tea', type: 'drink', price:150
+}
+        
 coffee.add(elem);
 coffee.addorder(item)
+coffee.removeOrder(item)
