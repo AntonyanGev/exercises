@@ -15,7 +15,8 @@ function unique(arr) {
   return res;
 }
 
-///2
+///2  Given an array of integers. All numbers are unique. Find the count of missing numbers
+between minimum and maximum elements to make integers sequence.
 
 function MissingNum(array) {
  const minElement = Math.min(...array);
@@ -29,7 +30,7 @@ function MissingNum(array) {
       return count;
     }
 
-// 3  
+// 3  Write a constructor function called CoffeeShop, which has three instance properties:
 
 function CoffeeShop(name, menu) {
   this.name = name;
