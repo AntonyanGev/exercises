@@ -1,7 +1,7 @@
 
 
 //1 Given an array. Determine whether it consists only from uniques or not.
-function unique7777(arr) {
+function unique(arr) {
   let res = true;
   let result = [];
   for (let i = 0; i < arr.length; i++) {
