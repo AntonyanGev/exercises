@@ -30,3 +30,8 @@ function customIndexOf(arr, elem) {
   }
   return -1;
 }
+
+
+
+////reduce
+???
