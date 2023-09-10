@@ -1,0 +1,22 @@
+function bubblesort(arr) {
+    let len = arr.length;
+
+    for (let i = 0; i < len; i++) {
+        let swapped = false;
+
+        for (let j = 0; j < len - i - 1; j++) { // Increment j, not i
+            if (arr[j] > arr[j + 1]) {
+                let b = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = b;
+                swapped = true;
+            }
+        }
+
+        if (!swapped) {
+            break;
+        }
+    }
+
+    return arr;
+}
