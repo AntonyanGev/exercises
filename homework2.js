@@ -63,15 +63,6 @@ function showPattern(param) {
 }
 
 
-/////5  couldn't write
-
-
-
-
-
-
-
-
 
 
 
