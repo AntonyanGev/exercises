@@ -14,6 +14,26 @@ function palindrome(str) {
     return isPalindrome
 }
 
+
+
+function foo (str){
+let ispolindrome=true
+    for(let i=0;i<str.length/2; i++){
+
+        if(str[i]!== str[str.length-1-i]){
+         ispolindrome= false
+            break
+        } else {
+              ispolindrome=true 
+        }
+   
+    }
+    return ispolindrome
+}
+
+
+
+
 ////the second solution of this exercise
 function palindrome(str) {
     for(let i=0; i<str.length;i++) {
@@ -27,6 +47,16 @@ function palindrome(str) {
    }
 }
 
+
+/// third solution of this exercise. easy one
+
+function pol(str) {
+    let result = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        result += str[i];
+    }
+    return result === str;
+}
 
 ///2--couldn't write
 
